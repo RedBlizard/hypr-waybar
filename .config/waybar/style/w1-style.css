@@ -61,7 +61,7 @@ tooltip {
 #custom-themeswitcher,
 #custom-outlook,
 #custom-chatgpt,
-#custom-calculator,
+#custom-swww,
 #custom-language,
 #custom-updates,
 #custom-hypridle,
@@ -233,11 +233,11 @@ tooltip {
 
 }
 
-#custom-calculator {
+#custom-swww {
     color: #d8dee9;
     background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);       
-    padding-right: 5px;
-    padding-left:  5px; 
+    padding-right: 0px;
+    padding-left:  10px; 
     margin-top: 14px;
     margin-bottom: 15px; 
     margin-left: 0px;
@@ -552,8 +552,8 @@ tooltip {
     margin-right: 0px;    
     border-left: 0px;
     border-right: 0px;    
-    padding-right: 15px;
-    padding-left: 10px;
+    padding-right: 10px;
+    padding-left: 5px;
     
     
 }

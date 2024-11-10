@@ -63,7 +63,7 @@ tooltip {
 #custom-chatgpt,
 #custom-messenger,
 #custom-telegram,
-#custom-calculator,
+#custom-swww,
 #custom-language,
 #custom-updates,
 #custom-hypridle,
@@ -267,11 +267,11 @@ tooltip {
 
 }
 
-#custom-calculator {
+#custom-swww {
     color: #d8dee9;
     background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);       
-    padding-left:  15px;
-    padding-right: 5px;
+    padding-left:  10px;
+    padding-right: 0px;
     margin-top: 14px;
     margin-bottom: 15px;
     border-left: 5px;

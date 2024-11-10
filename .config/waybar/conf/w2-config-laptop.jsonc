@@ -10,7 +10,7 @@
 
     
   //--- Modules ------------------------------
-       "modules-left": ["custom/launcher", "custom/themeswitcher", "custom/settings", "custom/info", "custom/hypr-welcome", "custom/calculator", "hyprland/workspaces", "cpu", "custom/cputemp", "custom/memory", "custom/hypridle", "custom/updates",],
+       "modules-left": ["custom/launcher", "custom/themeswitcher", "custom/settings", "custom/info", "custom/hypr-welcome", "custom/swww", "hyprland/workspaces", "cpu", "custom/cputemp", "custom/memory", "custom/hypridle", "custom/updates",],
        "modules-center": ["clock", "custom/notification",],
        "modules-right": ["tray", "network", "custom/traffic", "custom/language", "custom/cycle_wall", "pulseaudio", "pulseaudio#microphone", "battery", "backlight", "custom/power",],       
        
@@ -85,13 +85,12 @@
        //"on-click": "$HOME/.config/hypr/apps/hypr-settings",//          
        "tooltip-format": "",
        "signal": 8,
-       "tooltip": false
-       
+       "tooltip": false       
        
   },
   "custom/info": {
-       "format": "",
-       "on-click": "$HOME/.config/waybar/scripts/settings.sh",          
+       "format": "",
+       "on-click": "$HOME/.config/hypr/scripts/keyhint.sh",          
        "tooltip-format": "",
        "signal": 8,
        "tooltip": false     
@@ -140,10 +139,10 @@
        "tooltip": false             
        
   },
-  // Galculator
-  "custom/calculator": {
-       "format": "<span font='9'></span>",       
-       "on-click": "galculator",
+  // Swww
+  "custom/swww": {
+       "format": "<span font='9'> </span>",    
+       "on-click": "$HOME/.config/waybar/scripts/yad_waybar_swww.sh",
        "tooltip": false
        
   },
