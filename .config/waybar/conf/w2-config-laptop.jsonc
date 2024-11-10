@@ -81,7 +81,8 @@
   },
   "custom/settings": {
        "format": "",
-       "on-click": "$HOME/.config/hypr/apps/hypr-settings",          
+       "on-click": "$HOME/.config/waybar/scripts/hyprgui.sh",
+       //"on-click": "$HOME/.config/hypr/apps/hypr-settings",//          
        "tooltip-format": "",
        "signal": 8,
        "tooltip": false
