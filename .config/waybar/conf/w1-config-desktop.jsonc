@@ -56,7 +56,7 @@
                                
   },
   "custom/launcher": {       
-       "format": "<span font='10'></span>",  
+       "format": "<span font='10'> </span>",  
        "on-click": "$HOME/.config/hypr/scripts/menu && pkill -RTMIN+8 waybar",   
        "tooltip-format": "",      
        "tooltip": false,
