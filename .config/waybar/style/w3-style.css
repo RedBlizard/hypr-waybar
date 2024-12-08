@@ -234,7 +234,10 @@ label:focus {
 }
 
 #backlight {
-    font-family: Awesome6;    
+    font-family: Awesome6;
+    border-left-style: solid;
+    border-left-width: 2px;
+	border-left-color: #303030;    
     font-size: 12px;   
     padding-right: 5px;
     padding-left: 5px;
