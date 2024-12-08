@@ -1,0 +1,226 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    "height": 8, // Waybar height (to be removed for auto height)
+    "width": "auto", // Waybar width
+    "spacing": 4, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "modules-left": ["hyprland/workspaces", "hyprland/window#app-id"],
+    "modules-right": ["tray", "custom/hypridle", "custom/updates", "network", "custom/traffic", "cpu", "custom/cputemp", "custom/memory", "pulseaudio", "backlight",  "battery", "clock", "custom/powermenu"],
+  
+  "hyprland/workspaces": {  
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1",
+    "disable-scroll": true,
+    "only-active": false,
+    "all-outputs": true,
+    "on-click": "activate",
+    "format": "{icon}",
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],   
+      "3": [],
+      "4": [],
+      "5": [],
+      "6": [],
+      "7": [],
+      "8": [],
+      "9": [],
+      "10": [],
+    },
+    "format-icons": {
+          "1": "<span font='9'></span>",
+          "2": "<span font='9'></span>",
+          "3": "<span font='9'></span>",
+          "4": "<span font='9'></span>",
+          "5": "<span font='9'></span>",
+          "6": "<span font='9'></span>",
+          "7": "<span font='9'></span>",
+          "8": "<span font='9'></span>",
+          "9": "<span font='9'></span>",
+          "10": "<span font='9'></span>",
+     "urgent": "<span font='9'></span>",
+     "focused":"<span font='9'></span>",
+      "default":"<span font='9'></span>"       
+      
+     },
+     "sort-by-number": true,
+     
+     },
+     "hyprland/window#app-id": {
+     "icon": false,
+     "format": " {class} "
+  
+     },
+     "custom/powermenu": {
+        "format": "<span font='9' rise='1000'></span>",
+        "on-click": "~/.config/hypr/scripts/logout.sh && pkill -RTMIN+8 waybar",      
+        "signal": 8,
+        "tooltip": false,
+     },  
+     "custom/hypridle": {
+      "exec": "cat /tmp/waybar_hypridle_fifo",
+      "return-type": "json",
+      "interval": 3,
+      "on-click": "~/.config/waybar/scripts/hypridle_toggle.sh", // this script works with hypridle
+              
+    },
+    "tray": {
+        "icon-size": 13,
+        "spacing": 10
+    },        
+    "clock": {
+        "format": "  {:%H:%M} ",  
+        "format-alt": "  {:%R    %a,%d %b}",              
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><big>{calendar}</big></tt>",
+        "calendar": {
+                    "mode"          : "month",
+                    "mode-mon-col"  : 3,
+                    "weeks-pos"     : "right",
+                    "on-scroll"     : 1,
+                    "on-click-right": "mode",
+                    "format": {
+                              "months":     "<span color='#ffead3'><b>{}</b></span>",
+                              "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                              "weeks":      "<span color='#A6D189'><b>W{}</b></span>",
+                              "weekdays":   "<span color='#E5C890'><b>{}</b></span>",
+                              "today":      "<span color='#E78284'><b><u>{}</u></b></span>"
+                              }
+                    },
+        "actions":  {
+                    "on-click-right": "mode",
+                    "on-click-forward": "tz_up",
+                    "on-click-backward": "tz_down",
+                    "on-scroll-up": "shift_up",
+                    "on-scroll-down": "shift_down"
+                    }
+    },
+    "cpu": {
+        "format": "<span font='9'></span> CPU {usage}%",
+        "on-click": "kitty glances",
+        "tooltip": false
+    },
+    "custom/memory":{  
+       "exec": "~/.config/waybar/scripts/free-mem.sh",
+       "interval": 1,
+       "tooltip": false,
+       "on-click": "~/.config/waybar/scripts/htop.sh",
+    },
+    "custom/cputemp":{
+       "exec": "~/.config/waybar/scripts/minimalbar-temperature",
+       "interval": 1,
+       "tooltip": false,
+       "on-click": "~/.config/waybar/scripts/cpu-temp.sh --popup",
+       "on-click-right": "~/.config/waybar/scripts/btop.sh",
+  },    
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{icon} {percent}%",
+    "format-icons": [
+      "<span font='9'> </span>",
+      "<span font='9'> </span>",
+      "<span font='9'> </span>",
+      "<span font='9'> </span>",
+      "<span font='9'>󰖨 </span>",
+    ],
+    "on-scroll-up": "brightnessctl set 1%+",
+    "on-scroll-down": "brightnessctl set 1%-",
+    "tooltip": false,
+    "min-length": 6 
+     
+   },
+    "battery": {
+      "exec": "~/.config/waybar/scripts/battery.sh",      
+      "interval": 60,  // Adjust the interval as needed
+      "return-type": "json",
+      "format": "{icon} {capacity}%",
+      "format-charging": "{icon} Charging {capacity}%",
+      "format-plugged": "{icon} Plugged {capacity}%",
+      "format-alt": "{time} {icon}",
+      "format-icons": [
+      "<span font='9'> </span>",
+      "<span font='9'> </span>",
+      "<span font='9'> </span>",
+      "<span font='9'> </span>",
+      "<span font='9'> </span>"
+      ],     
+      "tooltip": true
+    
+    },    
+    "custom/updates": {
+        "exec": "~/.config/waybar/scripts/updates.sh",
+        "exec-if": "exit 0",
+        "interval": 300,      
+        "format": "<span font='10' rise='1000'>󰏔 </span>{}",
+        "on-click": "kitty --title 'Updates' sh -c 'sudo pacman -Syu && yay -Syu --noconfirm && ~/.config/waybar/scripts/updates.sh && pkill -RTMIN+8 waybar'",
+        "signal": 8,
+        "tooltip": false 
+          
+    },
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "{essid} ({signalStrength}%)",
+        "format-ethernet": "ETH   ",
+        "tooltip-format": "{ifname} via {gwaddr}   ",
+        "format-linked": "ETH {ifname} (No IP)   ",
+        "format-disconnected": "Disconnected",
+        "format-alt": "NET {ifname}: {ipaddr}/{cidr}",       
+        "on-click-right": "nm-connection-editor"
+    
+    },    
+      "custom/traffic": {
+      "exec": "~/.config/waybar/scripts/network_traffic.sh enp3s0",
+      //"return-type": "json",
+      //"format": " Speed: {}",    // optional    
+        
+   },
+   "pulseaudio": {      
+   "format": "{icon} {volume}%",
+   "format-muted": "<span foreground='#E78284'> Muted</span>",
+   "format-bluetooth": "{volume}% {icon} {format_source}",
+   "format-bluetooth-muted": " {icon} {format_source}",
+   "format-source": "{volume}% ",
+      "format-icons": {
+      "headphone": " ",
+      "hands-free": " ",
+      "headset": " ",
+      "phone": " ",
+      "portable": " ",
+      "car": " ",
+      "default": [" ", " ", " "]
+
+     },
+      "on-click": "~/.config/hypr/scripts/volume.sh volume_mute",
+      "on-click-right": "pavucontrol-qt",
+      "on-scroll-up": "~/.config/hypr/scripts/volume.sh volume_up",
+      "on-scroll-down": "~/.config/hypr/scripts/volume.sh volume_down",
+      "smooth-scrolling-threshold": 1,
+      "scroll-step": 5,
+      "tooltip": true
+      
+    },
+    "pulseaudio#microphone": {
+      "format": "{format_source}",
+      "format-source": "<span foreground='#85C1DC'></span> {volume}%",
+      "format-source-muted": "<span foreground='#E78284'>  Muted</span>",
+      "on-click": "~/.config/hypr/scripts/volume.sh mic_mute",
+      "on-click-right": "pavucontrol-qt -t 4",
+      "on-scroll-up": "~/.config/hypr/scripts/volume.sh mic_up",
+      "on-scroll-down": "~/.config/hypr/scripts/volume.sh mic_down",
+      "smooth-scrolling-threshold": 1,
+      "scroll-step": 5    
+
+    },
+    "custom/media": {
+        "format": "{icon} {}",
+        "return-type": "json",
+        "max-length": 40,
+        "format-icons": {
+            "spotify": "",
+            "default": "🎜"
+        },
+        "escape": true,
+        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
+        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    }
+}
