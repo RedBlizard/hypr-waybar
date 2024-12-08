@@ -70,7 +70,7 @@
         "spacing": 10
     },        
     "clock": {
-        "format": "  {:%H:%M} ",  
+        "format": "   {:%H:%M} ",  
         "format-alt": "  {:%R    %a,%d %b}",              
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><big>{calendar}</big></tt>",
         "calendar": {
