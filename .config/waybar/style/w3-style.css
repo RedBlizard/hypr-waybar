@@ -8,7 +8,7 @@
 }
 
 window#waybar {
-    background-color: rgba(46, 52, 64, 0.9);
+    background-color: rgba(46, 52, 64, 0.7);
     color: #cccccc;
     transition-property: background-color;    
     transition-duration: .5s;
@@ -95,14 +95,16 @@ tooltip {
 }
 
 #pulseaudio {
-    border-left-style: none;
+    border-left-style: solid;
 	font-family: Awesome6;  
     padding-right: 5px;
     padding-left: 5px;
 
 }
 #custom-cputemp {
-	border-left-style: none;
+	border-left-style: solid;
+    border-left-width: 2px;
+	border-left-color: #303030;
 	margin-left: 5px;
 	font-family: Awesome6;  
     padding-right: 5px;
@@ -239,11 +241,14 @@ label:focus {
 }
 
 #custom-powermenu {    
-    font-family: monospace;    
+    font-family: monospace;
+    border-left-style: solid;
+    border-left-width: 2px;
+	border-left-color: #303030;    
     font-weight: bold;
     font-size: 12px;  
     padding-right: 15px;
-    padding-left: 0px;
+    padding-left: 10px;
 }
 
 
