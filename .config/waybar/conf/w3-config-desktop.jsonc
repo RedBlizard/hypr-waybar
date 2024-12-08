@@ -6,7 +6,7 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces", "hyprland/window#app-id"],
-    "modules-right": ["tray", "custom/hypridle", "custom/updates", "network", "custom/traffic", "cpu", "custom/cputemp", "custom/memory", "pulseaudio", "backlight",  "battery", "clock", "custom/powermenu"],
+    "modules-right": ["tray", "custom/hypridle", "custom/updates", "network", "custom/traffic", "cpu", "custom/cputemp", "custom/memory", "pulseaudio", "pulseaudio#microphone", "backlight",  "battery", "clock", "custom/powermenu"],
   
   "hyprland/workspaces": {  
     "on-scroll-up": "hyprctl dispatch workspace e+1",
@@ -201,7 +201,7 @@
     },
     "pulseaudio#microphone": {
       "format": "{format_source}",
-      "format-source": "<span foreground='#85C1DC'></span> {volume}%",
+      "format-source": "<span foreground='#d8dee9'></span> {volume}%",
       "format-source-muted": "<span foreground='#E78284'>  Muted</span>",
       "on-click": "~/.config/hypr/scripts/volume.sh mic_mute",
       "on-click-right": "pavucontrol-qt -t 4",
