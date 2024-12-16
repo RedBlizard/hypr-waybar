@@ -50,6 +50,7 @@ tooltip {
 
 #custom-language,
 #custom-updates,
+#custom-clipboard,
 #custom-hypridle,
 #clock,
 #battery,
@@ -73,7 +74,7 @@ tooltip {
 #clock {
     color: #d8dee9;
     background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 10px;
     border: none; 
     margin-top: 14px;
     margin-bottom: 15px;
@@ -81,7 +82,7 @@ tooltip {
     border-right: 5px;
     margin-left: 5px;
     margin-right: 0px;
-    padding-right: 5px;
+    padding-right: 10px;
     padding-left: 10px;    
 }
 
@@ -214,11 +215,11 @@ tooltip {
 #custom-updates {
     color: #d8dee9;
     background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
-    border-radius: 0px 10px 10px 0px; 
+    border-radius: 0px 10px 10px 0px;     
     margin-top: 14px;
     margin-bottom: 15px;
     margin-left: 0px;
-    margin-right: 5px;     
+    margin-right: 0px;     
     border-left: 0px;
     border-right: 0px;
     padding-right: 10px;
@@ -389,15 +390,29 @@ tooltip {
     padding-left: 5px;    
 }
 
+#custom-clipboard {
+    color: #d8dee9;
+    background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
+    border-radius: 10px 0px 0px 10px;     
+    margin-top: 14px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 0px;     
+    border-left: 0px;
+    border-right: 0px;
+    padding-right: 10px;
+    padding-left: 10px;  
+}
+
 #custom-notification {
     color: #d8dee9;
     background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 10px 10px 0px;    
     border: none;
     margin-top: 14px;
     margin-bottom: 15px;
     margin-left: 0px;
-    margin-right: 15px;     
+    margin-right: 0px;     
     border-left: 0px;
     border-right: 0px;
     padding-right: 10px;
