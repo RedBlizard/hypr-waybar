@@ -79,12 +79,10 @@ tooltip {
 #custom-notification,
 #tray,
 #custom-power {
-
     background: #39404f;
     padding: 0px 10px;
     margin: 3px 0px;
-    border: 2px solid #39404f; 
-        
+    border: 2px solid #39404f;         
 }
 
 #clock {
@@ -251,7 +249,7 @@ tooltip {
 
 #workspaces button {
     padding: 5px;
-    color: #858383;
+    color: #d8dee9;
     margin-right: 5px;
     border-radius: 10px;
 }
@@ -259,8 +257,7 @@ tooltip {
 #workspaces button.active {
     color: #000000;
     background: #FF7F7F;
-    border-radius: 10px;
-    
+    border-radius: 10px;    
 }
 
 #workspaces button.focused {
@@ -278,8 +275,7 @@ tooltip {
 #workspaces button:hover {
     background: #7f7fff;   
     color: #000000;
-    border-radius: 10px;
-   
+    border-radius: 10px;   
 }
 
 #workspaces {
@@ -295,8 +291,6 @@ tooltip {
     margin-right:  0px;  
     border-left: 0px;
     border-right: 0px;
-
-    
 }
 
 #cpu {
@@ -312,8 +306,6 @@ tooltip {
     padding-left: 10px;
     font-family: Cartograph CF Nerd Font, monospace;
     font-weight: bold;
-   
-    
 }
 
 #custom-cputemp {
@@ -328,7 +320,6 @@ tooltip {
     padding-left: 10px;
     font-family: Cartograph CF Nerd Font, monospace;
     font-weight: bold;
-    
 } 
 
 #custom-memory {
@@ -343,7 +334,6 @@ tooltip {
     padding-left: 10px;
     font-family: Cartograph CF Nerd Font, monospace;
     font-weight: bold;
-    
 }
 
 #taskbar {
@@ -359,6 +349,7 @@ tooltip {
     margin-left: 0px;
     margin-right: 0px;
 }
+
 #taskbar button {
     border-radius: 8px 8px 8px 8px;
     padding: 0 0 0 8px;
@@ -366,11 +357,10 @@ tooltip {
     margin-left: 0px;
     color: #000000;    
     background: #39404f;
-    
 }
+
 #taskbar button.active {
     background: #39404f;
-             
 }
 
 #window {
@@ -388,8 +378,7 @@ tooltip {
     margin-right: 50px;
     padding-right: 10px;
     padding-left: 10px;
-    
-}
+ }
    
 #tray {    
     background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%); 
@@ -402,7 +391,6 @@ tooltip {
     border-right: 0px;
     padding-right: 15px;
     padding-left: 13px;
-
 }  
 
 #custom-hypridle {
@@ -417,7 +405,6 @@ tooltip {
     border-right: 0px;
     padding-right: 10px;
     padding-left: 10px;
-
 }
 
 #custom-updates {
@@ -432,7 +419,6 @@ tooltip {
     border-right: 0px;
     padding-right: 10px;
     padding-left: 5px;  
-
 }
 
 #network {
@@ -446,9 +432,8 @@ tooltip {
     border-right: 0px;
     padding-right: 0px;
     padding-left: 10px;
-
-  
 }
+
 #custom-traffic {
     color: #E78284;
     background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
@@ -462,7 +447,6 @@ tooltip {
     border-right: 0px;
     padding-right: 10px;
     padding-left: 5px; 
-
 }
 
 #custom-language {
@@ -480,7 +464,6 @@ tooltip {
     border-right: 0px;
     padding-right: 0px;
     padding-left: 10px;    
-
 }
 
 #custom-cycle_wall {
@@ -495,8 +478,6 @@ tooltip {
     border-right: 0px;
     padding-right: 10px;
     padding-left: 0px;
-    
-    
 }
 
 #custom-pipewire {
@@ -511,8 +492,6 @@ tooltip {
     border-right: 0px;
     padding-right: 5px;
     padding-left: 10px;
-
-
 }
 
 #pulseaudio {
@@ -527,7 +506,6 @@ tooltip {
     border-right: 0px;
     padding-right: 5px;
     padding-left: 10px;
-
 }
 
 #pulseaudio.microphone {
@@ -542,7 +520,6 @@ tooltip {
     border-right: 5px;
     padding-right: 10px;
     padding-left: 5px;   
-
 }
 
 #custom-dunst {
@@ -558,8 +535,6 @@ tooltip {
     border-right: 0px;    
     padding-right: 10px;
     padding-left: 5px;
-    
-    
 }
 
 #custom-notification {
@@ -575,9 +550,7 @@ tooltip {
     border-right: 0px;    
     padding-right: 15px;
     padding-left: 10px;
-    
-    
-}
+ }
 
 #custom-notification button {
   background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%); 
@@ -600,9 +573,7 @@ tooltip {
     border-right: 0px;
     padding-right: 15px;
     padding-left: 13px;
-    
-    
-}
+}  
 
 #custom-space {    
     color: #d8dee9; 
@@ -617,6 +588,4 @@ tooltip {
     border-right: 0px;    
     padding-right: 5px;
     padding-left: 5px;
-    
-    
-}
+ }
