@@ -539,6 +539,60 @@ tooltip {
   color: #232634;
 }
 
+#battery {
+    color: #95D189;
+    background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%); 
+    border-radius: 10px 0px 0px 10px;    
+    margin-top: 14px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+    margin-right: 0px;    
+    border-left: 0px;
+    border-right: 0px;    
+    padding-right: 5px;
+    padding-left: 10px;
+
+    
+}
+    
+#battery.charging {
+    color: #fab387;
+    background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
+    
+}
+
+#battery.discharging {
+    color: #F38BA8;
+    background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
+
+    
+}
+
+#battery.warning:not(.charging) {
+    color: #F38BA8;
+    background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
+    animation-name:             blink;
+    animation-duration:         0.5s;
+    animation-timing-function:  linear;
+    animation-iteration-count:  infinite;
+    animation-direction:        alternate;    
+}    
+     
+
+#backlight {
+    color: #E5C890;   
+    background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%); 
+    border-radius: 0px 10px 10px 0px; 
+    margin-top: 14px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+    margin-right: 5px;     
+    border-left: 0px;
+    border-right: 0px;
+    padding-right: 10px;
+    padding-left: 10px;    
+}
+
 #custom-power {
     color: #E78284;
     background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%); 
