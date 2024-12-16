@@ -10,9 +10,9 @@
 
     
   //--- Modules ------------------------------
-       "modules-left": ["custom/launcher", "custom/themeswitcher", "custom/settings", "custom/info", "custom/hypr-welcome", "custom/swww", "hyprland/workspaces", "cpu", "custom/cputemp", "custom/memory", "custom/hypridle", "custom/updates",],
-       "modules-center": ["clock", "custom/notification",],
-       "modules-right": ["tray", "network", "custom/traffic", "custom/language", "custom/cycle_wall", "pulseaudio", "pulseaudio#microphone", "battery", "backlight", "custom/power",],       
+       "modules-left": ["custom/launcher", "custom/themeswitcher", "custom/settings", "custom/info", "custom/hypr-welcome", "custom/swww", "hyprland/workspaces", "cpu", "custom/cputemp", "custom/memory", "custom/clipboard", "custom/notification",],
+       "modules-center": ["clock",],
+       "modules-right": ["tray", "custom/hypridle", "custom/updates", "network", "custom/traffic", "custom/language", "custom/cycle_wall", "pulseaudio", "pulseaudio#microphone", "battery", "backlight", "custom/power",],       
        
    "hyprland/window": {  // Module has to be here in the config otherwise it will not work correctly
         "max-length": 100,
@@ -206,6 +206,16 @@
       
   },
   "sort-by-number": true,
+  
+  },
+  "custom/clipboard": {
+        "tooltip": false,
+        "format": "<span font='9'></span>",
+        "interval": "once",
+        "return-type": "json",       
+        "on-click": "cliphist list | wofi -dmenu | cliphist decode | wl-copy; pkill -RTMIN+9 waybar",
+        "on-click-right": "~/.config/hypr/scripts/cliphist-menu.sh; pkill -RTMIN+9 waybar", // ("Copy" "Delete" "Clear") */
+        "signal": 8
   
   },
   "custom/notification": {
