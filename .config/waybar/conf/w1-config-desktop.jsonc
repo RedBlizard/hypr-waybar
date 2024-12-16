@@ -29,7 +29,8 @@
      
      },  
       "hyprland/window#app-id": {
-      "icon": false,
+      "icon": true,
+      "icon-size": 12,
       "format": "<span font='9'>{class}</span>",           
             
     },        
@@ -150,7 +151,7 @@
     "only-active": false,
     "all-outputs": true,
     "on-click": "activate",
-    "format": "{icon}",
+    "format": "{icon}",  
     "persistent-workspaces": {
       "1": [],
       "2": [],
