@@ -87,7 +87,7 @@ tooltip {
 
 #workspaces button {
     padding: 5px;
-    color: #858383;
+    color: #d8dee9;
     margin-right: 5px;
     border-radius: 10px;
 }
@@ -95,7 +95,7 @@ tooltip {
 #workspaces button.active {
     color: #000000;
     background: #FF7F7F;
-    border-radius: 10px;    
+    border-radius: 10px;  
 }
 
 #workspaces button.focused {
