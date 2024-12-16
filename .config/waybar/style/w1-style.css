@@ -225,6 +225,19 @@ tooltip {
     border-right: 0px;
 }
 
+#custom-clipboard {
+    color: #d8dee9;
+    background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);    
+    margin-top: 14px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+    margin-right: 0px;     
+    border-left: 0px;
+    border-right: 0px;
+    padding-right: 5px;
+    padding-left: 10px;  
+}
+
 #workspaces button {
     padding: 5px;
     color: #d8dee9;
@@ -526,8 +539,8 @@ tooltip {
     margin-right: 0px;    
     border-left: 0px;
     border-right: 0px;    
-    padding-right: 15px;
-    padding-left: 10px;
+    padding-right: 10px;
+    padding-left: 5px;
  }
 
 #custom-notification button {
