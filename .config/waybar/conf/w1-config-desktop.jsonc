@@ -10,7 +10,7 @@
        
     
   //--- Modules ------------------------------
-       "modules-left": ["custom/launcher", "hyprland/workspaces", "custom/themeswitcher", "custom/settings", "custom/info", "custom/hypr-welcome", "custom/swww", "custom/notification", "cpu", "custom/cputemp", "custom/memory", "custom/hypridle", "custom/updates",],       
+       "modules-left": ["custom/launcher", "hyprland/workspaces", "custom/themeswitcher", "custom/settings", "custom/info", "custom/hypr-welcome", "custom/swww", "custom/clipboard", "custom/notification", "cpu", "custom/cputemp", "custom/memory", "custom/hypridle", "custom/updates",],       
        "modules-center": ["hyprland/window#app-id",],
        "modules-right": ["tray", "network", "custom/traffic", "custom/language", "custom/cycle_wall", "pulseaudio", "pulseaudio#microphone", "clock", "custom/power",],
        
@@ -176,6 +176,16 @@
       
   },
   "sort-by-number": true,
+  
+  },
+  "custom/clipboard": {
+        "tooltip": false,
+        "format": "<span font='9'></span>",
+        "interval": "once",
+        "return-type": "json",       
+        "on-click": "cliphist list | wofi -dmenu | cliphist decode | wl-copy; pkill -RTMIN+9 waybar",
+        "on-click-right": "~/.config/hypr/scripts/cliphist-menu.sh; pkill -RTMIN+9 waybar", // ("Copy" "Delete" "Clear") */
+        "signal": 8  
   
   },
   "custom/notification": {
