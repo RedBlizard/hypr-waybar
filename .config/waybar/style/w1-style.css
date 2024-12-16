@@ -21,8 +21,7 @@
     font-size: 12px;    
     padding: 0;
     min-height: 0px;
-    margin: -2px;    
-
+    margin: -2px; 
 }
 
 window#waybar {
@@ -34,14 +33,11 @@ window#waybar {
 
 window#waybar.hidden {
     opacity: 0.5;
-        
 }
 
 window#waybar.empty #window {  
  background:none;
  border: none;   
-
-    
 }
 
 
@@ -51,7 +47,6 @@ tooltip {
     border-width: 2px;
     border-style: solid;
     border-color: #FD807E;
-    
 }
 
 #custom-launcher,
@@ -97,7 +92,6 @@ tooltip {
     margin-right: 0px;
     padding-right: 10px;
     padding-left: 10px;
-    
 }    
 
 #custom-launcher {
@@ -112,7 +106,6 @@ tooltip {
     border-right: 5px;
     margin-left: 20px;
     margin-right: 0px;
-
 }
 
 #custom-brave {
@@ -124,7 +117,6 @@ tooltip {
     border-right: 5px;
     margin-left: 0px;
     margin-right: 0px;
-
 }
 
 #custom-themeswitcher {
@@ -139,7 +131,6 @@ tooltip {
     border-right: 0px;
     margin-left: 5px;
     margin-right: 0px;
-
 }
 
 #custom-settings {
@@ -154,8 +145,6 @@ tooltip {
     padding-right: 5px;
     padding-left: 10px;
     border: #39404f;
-    
-    
 }
 
 #custom-info {
@@ -170,9 +159,6 @@ tooltip {
     border-right: 0px;
     padding-right: 5px;
     padding-left: 10px;
- 
-    
-    
 }
 
 #custom-hypr-welcome {
@@ -187,9 +173,6 @@ tooltip {
     border-right: 0px;
     padding-right: 5px;
     padding-left: 10px;
- 
-    
-    
 }   
 
 #custom-outlook {
@@ -202,7 +185,6 @@ tooltip {
     border-right: 5px;
     margin-left: 0px;
     margin-right: 0px;
-
 }
 
 #custom-teams {
@@ -215,7 +197,6 @@ tooltip {
     border-right: 5px;
     margin-left: 0px;
     margin-right: 0px;
-
 }
 
 #custom-chatgpt {
@@ -229,7 +210,6 @@ tooltip {
     border-right: 5px;
     margin-left: 0px;
     margin-right: 0px;
-
 }
 
 #custom-swww {
@@ -243,8 +223,6 @@ tooltip {
     margin-right:  0px;  
     border-left: 0px;
     border-right: 0px;
-
-
 }
 
 #workspaces button {
