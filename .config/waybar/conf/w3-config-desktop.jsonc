@@ -10,8 +10,8 @@
 
     
   //--- Modules ------------------------------
-       "modules-left": ["hyprland/workspaces", "cpu", "custom/cputemp", "custom/memory", "custom/hypridle", "custom/updates",],
-       "modules-center": ["clock", "custom/notification",],
+       "modules-left": ["hyprland/workspaces", "cpu", "custom/cputemp", "custom/memory", "custom/hypridle", "custom/updates", "custom/clipboard", "custom/notification",],
+       "modules-center": ["clock",],
        "modules-right": ["tray", "network", "custom/traffic", "custom/language", "custom/cycle_wall", "pulseaudio", "pulseaudio#microphone", "battery", "backlight", "custom/power",],       
        
    "hyprland/window": {  // Module has to be here in the config otherwise it will not work correctly
@@ -105,6 +105,15 @@
         "on-click": "sleep 0.1; swaync-client -t -sw",
         "on-click-right": "swaync-client -d -sw",
         "escape": true
+  },
+  "custom/clipboard": {
+       "tooltip": false,
+       "format": "<span font='9'></span>",
+       "interval": "once",
+       "return-type": "json",       
+       "on-click": "cliphist list | wofi -dmenu | cliphist decode | wl-copy; pkill -RTMIN+9 waybar",
+       "on-click-right": "~/.config/hypr/scripts/cliphist-menu.sh; pkill -RTMIN+9 waybar", // ("Copy" "Delete" "Clear") */
+       "signal": 8
   
   },
   "cpu": {
