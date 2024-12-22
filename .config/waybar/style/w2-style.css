@@ -374,12 +374,12 @@ tooltip {
 }  
 
 #custom-hypridle {
-    color: #F2D5CF;
+    color: #E5C890;
     background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
     border-radius: 10px 0px 0px 10px;     
     margin-top: 14px;
     margin-bottom: 15px;
-    margin-left: 0px; 
+    margin-left: 5px; 
     margin-right: 0px;     
     border-left: 0px;
     border-right: 0px;
@@ -388,7 +388,7 @@ tooltip {
 }
 
 #custom-updates {
-    color: #EEBEBE;
+    color: #F9E2AF;
     background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
     border-radius: 0px 10px 10px 0px; 
     margin-top: 14px;
