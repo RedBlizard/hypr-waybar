@@ -10,9 +10,9 @@
 
     
   //--- Modules ------------------------------
-       "modules-left": ["custom/launcher", "custom/themeswitcher", "custom/settings", "custom/info", "custom/hypr-welcome", "custom/swww", "hyprland/workspaces", "cpu", "custom/cputemp", "custom/memory", "custom/clipboard", "custom/notification",],
+       "modules-left": ["custom/launcher", "custom/themeswitcher", "custom/settings", "custom/info", "custom/hypr-welcome", "custom/swww", "hyprland/workspaces", "cpu", "custom/cputemp", "custom/memory", "custom/clipboard", "custom/notification", "custom/hypridle", "custom/updates",],
        "modules-center": ["clock",],
-       "modules-right": ["tray", "custom/hypridle", "custom/updates", "network", "custom/traffic", "custom/language", "custom/cycle_wall", "pulseaudio", "pulseaudio#microphone", "battery", "backlight", "custom/power",],       
+       "modules-right": ["tray", "network", "custom/traffic", "custom/language", "custom/cycle_wall", "pulseaudio", "pulseaudio#microphone", "battery", "backlight", "custom/power",],       
        
    "hyprland/window": {  // Module has to be here in the config otherwise it will not work correctly
         "max-length": 100,
