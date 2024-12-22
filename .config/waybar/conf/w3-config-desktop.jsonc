@@ -7,7 +7,7 @@
     "passthrough": "false",
     "height": "20",
     "gtk-layer-shell": true,
-
+    "reload_style_on_change": true,
     
   //--- Modules ------------------------------
        "modules-left": ["hyprland/workspaces", "cpu", "custom/cputemp", "custom/memory", "custom/hypridle", "custom/updates", "custom/clipboard", "custom/notification",],
