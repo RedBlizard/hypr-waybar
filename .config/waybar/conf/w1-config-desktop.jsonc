@@ -10,7 +10,7 @@
     "reload_style_on_change": true,       
     
   //--- Modules ------------------------------
-       "modules-left": ["custom/launcher", "hyprland/workspaces", "custom/themeswitcher", "custom/settings", "custom/info", "custom/hypr-welcome", "custom/swww", "custom/clipboard", "custom/notification", "cpu", "custom/cputemp", "custom/memory", "custom/hypridle", "custom/updates",],       
+       "modules-left": ["custom/launcher", "hyprland/workspaces", "custom/themeswitcher", "custom/info", "custom/hypr-welcome", "custom/swww", "custom/clipboard", "custom/notification", "cpu", "custom/cputemp", "custom/memory", "custom/hypridle", "custom/updates",],       
        "modules-center": ["hyprland/window#app-id",],
        "modules-right": ["tray", "network", "custom/traffic", "custom/language", "custom/cycle_wall", "pulseaudio", "pulseaudio#microphone", "clock", "custom/power",],
        
@@ -83,14 +83,6 @@
        "tooltip": false,
        "signal": 8
        
-  },
-  "custom/settings": {
-       "format": "",
-       "on-click": "$HOME/.config/waybar/scripts/hyprgui.sh",
-       //"on-click": "$HOME/.config/hypr/apps/hypr-settings",//          
-       "tooltip-format": "",
-       "signal": 8,
-       "tooltip": false       
        
   },
   "custom/info": {
