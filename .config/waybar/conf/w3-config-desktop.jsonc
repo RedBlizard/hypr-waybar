@@ -10,11 +10,12 @@
     "reload_style_on_change": true,
     
   //--- Modules ------------------------------
-       "modules-left": ["hyprland/workspaces", "cpu", "custom/cputemp", "custom/memory", "custom/hypridle", "custom/updates", "custom/clipboard", "custom/notification",],
-       "modules-center": ["clock",],
-       "modules-right": ["tray", "network", "custom/traffic", "custom/language", "custom/cycle_wall", "pulseaudio", "pulseaudio#microphone", "battery", "backlight", "custom/power",],       
+       "modules-left": ["clock", "hyprland/workspaces", "cpu", "custom/cputemp", "custom/memory",],
+       "modules-center": ["hyprland/window#app-id",],
+       "modules-right": ["tray", "custom/updates", "network", "custom/traffic", "pulseaudio", "pulseaudio#microphone", "battery", "backlight", "custom/hypridle", "custom/clipboard", "custom/notification", "custom/power",],       
        
    "hyprland/window": {  // Module has to be here in the config otherwise it will not work correctly
+        "format": "  {}",
         "max-length": 100,
         "rewrite": {
             "(.*) - Brave": "$1",
@@ -25,7 +26,13 @@
             "(.*) - Dolphin": "$1 ",
             "(.*) - Microsoft Teams": "$1",           
         },
-        "separate-outputs": true 
+        "separate-outputs": true
+        
+        },  
+        "hyprland/window#app-id": {
+        "icon": true,
+        "icon-size": 12,
+        "format": "<span font='9'>{class}</span>",      
        
     },        
     "clock": {
@@ -67,9 +74,9 @@
       "1": [],
       "2": [],
       "3": [],
-      "4": [], 
-      "5": [], 
-      "6": [],
+      "4": []
+
+
     },
     "format-icons": {
           "1": "<span font='9'></span>",
@@ -116,10 +123,11 @@
        "signal": 8
   
   },
-  "cpu": {
-       "format": "<span font='9'></span> CPU {usage}%",
-       "on-click": "kitty glances",
-       "tooltip": false
+    "cpu": {
+        "interval": 10,
+        "format": " {usage}%",
+        "format-alt": "{icon0}{icon1}{icon2}{icon3}",
+        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
          
   },
   "custom/cputemp":{
