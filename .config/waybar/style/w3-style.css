@@ -228,7 +228,8 @@ tooltip {
 
 #network {
     color: #d8dee9;
-    background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);          
+    background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
+    font-family: monospace;          
     margin-top: 14px;
     margin-bottom: 15px;
     margin-left: 0px;     
