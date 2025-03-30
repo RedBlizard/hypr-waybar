@@ -130,7 +130,8 @@
         "format-high":      "<span color='#EA999C'>\uF201 {usage}%</span>",
         "format-medium":    "<span color='#d8dee9'>\uF201 {usage}%</span>",
         "format-low":       "<span color='#d8dee9'>\uF201 {usage}%</span>",
-        "tooltip": true,
+        "tooltip": false,
+        "on-click": "kitty glances",
         "interval": 1,
         "states": {
             "critical": 80,
