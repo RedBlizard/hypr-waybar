@@ -141,7 +141,7 @@ tooltip {
     margin-right: 0px;
     margin-top: 14px;
     margin-bottom: 15px;
-    padding-right: 10px;
+    padding-right: 5px;
     padding-left: 10px;    
     font-weight: bold;
 }
@@ -153,8 +153,8 @@ tooltip {
     margin-right: 0px;
     margin-top: 14px;
     margin-bottom: 15px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
     font-family: monospace;
     font-weight: bold;
 } 
@@ -168,7 +168,7 @@ tooltip {
     margin-top: 14px;
     margin-bottom: 15px;
     padding-right: 10px;
-    padding-left: 10px;
+    padding-left: 5px;
     font-family: monospace;
     font-weight: bold;
 }
