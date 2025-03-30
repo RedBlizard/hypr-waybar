@@ -125,11 +125,19 @@
   
   },
     "cpu": {
+        // "format": "\uF201 {usage}%",
+        "format-critical":  "<span color='#E78284'><b>\uF201 {usage}%</b></span>",
+        "format-high":      "<span color='#EA999C'>\uF201 {usage}%</span>",
+        "format-medium":    "<span color='#d8dee9'>\uF201 {usage}%</span>",
+        "format-low":       "<span color='#d8dee9'>\uF201 {usage}%</span>",
+        "tooltip": true,
         "interval": 1,
-        "format": " {usage}%",
-        "format-alt": "{icon0}{icon1}{icon2}{icon3}",
-        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
-        "on-click-right": "kitty glances"
+        "states": {
+            "critical": 80,
+            "high": 50,
+            "medium": 5,
+            "low": 0
+    }
          
   },
   "custom/cputemp":{
