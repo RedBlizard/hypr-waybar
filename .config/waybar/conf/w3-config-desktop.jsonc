@@ -133,7 +133,7 @@
          
   },
   "custom/cputemp":{
-       "exec": "~/.config/waybar/scripts/laptopbar-temperature",
+       "exec": "~/.config/waybar/scripts/minimalbar-temperature",
        "interval": 1,
        "tooltip": false,
        "on-click": "~/.config/waybar/scripts/cpu-temp.sh --popup",
