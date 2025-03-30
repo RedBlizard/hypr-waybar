@@ -134,38 +134,43 @@ tooltip {
 
 #cpu {
     color: #d8dee9;
-    background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
+    background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);       
     border-radius: 10px 0px 0px 10px;
-    font-family: monospace;   
+    font-family: monospace;
     margin-left: 5px;
     margin-right: 0px;
     margin-top: 14px;
     margin-bottom: 15px;
     padding-right: 10px;
     padding-left: 10px;    
+    font-weight: bold;
 }
 
 #custom-cputemp {
     color: #d8dee9;
-    background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
+    background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);    
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 14px;
     margin-bottom: 15px;
-    padding-right: 5px;
-    padding-left: 0px;    
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: monospace;
+    font-weight: bold;
 } 
 
 #custom-memory {
     color: #d8dee9;
-    background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
-    border-radius: 0px 10px 10px 0px;     
+    background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);    
+    border-radius: 0px 10px 10px 0px;
     margin-left: 0px;
     margin-right: 5px;
     margin-top: 14px;
     margin-bottom: 15px;
     padding-right: 10px;
-    padding-left: 5px;    
+    padding-left: 10px;
+    font-family: monospace;
+    font-weight: bold;
 }
 
 #window {
