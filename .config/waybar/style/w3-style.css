@@ -141,7 +141,7 @@ tooltip {
     margin-right: 0px;
     margin-top: 14px;
     margin-bottom: 15px;
-    padding-right: 5px;
+    padding-right: 10px;
     padding-left: 10px;    
 }
 
@@ -152,8 +152,8 @@ tooltip {
     margin-right: 0px;
     margin-top: 14px;
     margin-bottom: 15px;
-    padding-right: 5px;
-    padding-left: 5px;    
+    padding-right: 10px;
+    padding-left: 10px;    
 } 
 
 #custom-memory {
