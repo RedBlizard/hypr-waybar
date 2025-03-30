@@ -120,22 +120,25 @@
        "return-type": "json",       
        "on-click": "cliphist list | wofi -dmenu | cliphist decode | wl-copy; pkill -RTMIN+9 waybar",
        "on-click-right": "~/.config/hypr/scripts/cliphist-menu.sh; pkill -RTMIN+9 waybar", // ("Copy" "Delete" "Clear") */
-       "signal": 8
+       "signal": 8,
+       "tooltip": false
   
   },
     "cpu": {
-        "interval": 10,
+        "interval": 1,
         "format": " {usage}%",
         "format-alt": "{icon0}{icon1}{icon2}{icon3}",
-        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
+        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+        "on-click-right": "kitty glances"
          
   },
   "custom/cputemp":{
-       "exec": "~/.config/waybar/scripts/minimalbar-temperature",
+       "exec": "~/.config/waybar/scripts/laptopbar-temperature",
        "interval": 1,
        "tooltip": false,
        "on-click": "~/.config/waybar/scripts/cpu-temp.sh --popup",
-       "on-click-right": "~/.config/waybar/scripts/btop.sh",            
+       "on-click-right": "~/.config/waybar/scripts/btop.sh", 
+                  
   },      
   "custom/memory":{  
        "exec": "~/.config/waybar/scripts/free-mem.sh",
@@ -176,11 +179,10 @@
         "signal": 8,
         "tooltip": false        
      
-
-  },
-  "network": {
+    },
+    "network": {
       "format-wifi": "<span font='10' rise='1000'> </span> {essid} ",
-      "format-ethernet": "<span font='10' rise='1000'> </span> ",
+      "format-ethernet": "<span font='10' rise='1000'></span> ",
 //      "format-ethernet": "<span foreground='#99ffdd'> ⇣ {bandwidthDownBytes}</span> <span foreground='#ffcc66'> ⇡ {bandwidthUpBytes}</span>",
       "format-linked": "{ifname} (No IP) ",
       "format-disconnected": "  Disconnected",
@@ -190,10 +192,11 @@
       "on-click": "~/.config/waybar/scripts/networkmanager.sh",
       "on-click-right": "nm-connection-editor",
       "interval": 1
-        
+    
+      
   },    
   "custom/traffic": {
-      "exec": "~/.config/waybar/scripts/network_traffic.sh enp3s0",
+      "exec": "~/.config/waybar/scripts/bandwidth",
       //"return-type": "json",
       //"format": " Speed: {}",    // optional
    

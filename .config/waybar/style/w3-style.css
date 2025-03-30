@@ -235,7 +235,7 @@ tooltip {
     margin-left: 0px;     
     border-left: 0px;
     border-right: 0px;
-    padding-right: 0px;
+    padding-right: 10px;
     padding-left: 10px;  
 }
 
@@ -243,7 +243,7 @@ tooltip {
     color: #d8dee9;
     background: linear-gradient(85deg, #39404f 5%, #39404f 45%, #39404f 75%);
     border-radius: 0px 10px 10px 0px;
-    font-family: monospace;   
+    font-family: monospace;    
     margin-top: 14px;
     margin-bottom: 15px;
     margin-left: 0px;
