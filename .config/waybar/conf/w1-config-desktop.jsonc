@@ -196,25 +196,22 @@
         "on-click-right": "swaync-client -d -sw",
         "escape": true    
   
-   	},    
+  },
     "cpu": {
-    "interval": 1,
-    "on-click": "~/.config/waybar/scripts/cpu.sh --popup",
-    "on-click-right": "kitty glances",
-    //"format": "<span font='9'></span>{usage:>2}% ",//
-    "format": "<span font='9'></span> Cpu {icon0}{icon1}{icon2}{icon3} {usage:>2}% ",
-    "tooltip": false,
-    "format-icons": [
-        "<span color='#8CAAEE'>▁</span>", // blue
-        "<span color='#99D1DB'>▂</span>", // sky
-        "<span color='#A6D189'>▃</span>", // green
-        "<span color='#A6D189'>▄</span>", // green
-        "<span color='#E5C890'>▅</span>", // yellow
-        "<span color='#E5C890'>▆</span>", // yellow
-        "<span color='#EF9F76'>▇</span>", // orange
-        "<span color='#E78284'>█</span>"  // red
-    ] 
-  
+        // "format": "\uF201 {usage:>2}%",
+        "format-critical":  "<span color='#E78284'><b>\uF201 {usage:>2}%</b></span>",
+        "format-high":      "<span color='#EA999C'>\uF201 {usage:>2}%</span>",
+        "format-medium":    "<span color='#8CAAEE'>\uF201 {usage:>2}%</span>",
+        "format-low":       "<span color='#8CAAEE'>\uF201 {usage:>2}%</span>",
+        "tooltip": false,
+        "on-click": "kitty glances",
+        "interval": 1,
+        "states": {
+            "critical": 80,
+            "high": 50,
+            "medium": 5,
+            "low": 0
+    }  
   
   },
   "custom/cputemp":{
