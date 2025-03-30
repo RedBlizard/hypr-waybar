@@ -125,11 +125,11 @@
   
   },
     "cpu": {
-        // "format": "\uF201 {usage}%",
-        "format-critical":  "<span color='#E78284'><b>\uF201 {usage}%</b></span>",
-        "format-high":      "<span color='#EA999C'>\uF201 {usage}%</span>",
-        "format-medium":    "<span color='#d8dee9'>\uF201 {usage}%</span>",
-        "format-low":       "<span color='#d8dee9'>\uF201 {usage}%</span>",
+        // "format": "\uF201 {usage:>2}%",
+        "format-critical":  "<span color='#E78284'><b>\uF201 {usage:>2}%</b></span>",
+        "format-high":      "<span color='#EA999C'>\uF201 {usage:>2}%</span>",
+        "format-medium":    "<span color='#d8dee9'>\uF201 {usage:>2}%</span>",
+        "format-low":       "<span color='#d8dee9'>\uF201 {usage:>2}%</span>",
         "tooltip": false,
         "on-click": "kitty glances",
         "interval": 1,
