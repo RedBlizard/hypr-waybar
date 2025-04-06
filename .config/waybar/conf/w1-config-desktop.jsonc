@@ -11,21 +11,27 @@
     
   //--- Modules ------------------------------
        "modules-left": ["custom/launcher", "hyprland/workspaces", "custom/themeswitcher", "custom/info", "custom/hypr-welcome", "custom/swww", "custom/clipboard", "custom/notification", "cpu", "custom/cputemp", "custom/memory", "custom/hypridle", "custom/updates",],       
-       "modules-center": ["hyprland/window#app-id",],
+       "modules-center": ["hyprland/window",],
        "modules-right": ["tray", "network", "custom/traffic", "custom/language", "custom/cycle_wall", "pulseaudio", "pulseaudio#microphone", "clock", "custom/power",],
        
-  "hyprland/window": {  // Module has to be here in the config otherwise it will not work correctly
-    "max-length": 55,
-        "rewrite": {
+   "hyprland/window": {  // Module has to be here in the config otherwise it will not work correctly
+	"format": "{}",
+	"max-length": 25,
+	"icon": true,
+    "icon-size": 12,
+	"separate-outputs": true,
+	"offscreen-css": true,
+	"offscreen-css-text": "(inactive)",
+	"rewrite": {
             "(.*) - Brave": "$1",
             "(.*) - Chromium": "$1",
             "(.*) - Brave Search": "$1",
+            "(.*) - SearXNG": "$1",
             "(.*) - Outlook": "$1",
             "(.*) - youtube.com": "$1",
             "(.*) - Dolphin": "$1 ",
-            "(.*) Microsoft Teams": "$1"            
-        },
-        "separate-outputs": true
+            "(.*) Microsoft Teams": "$1", 
+	}
      
      },  
       "hyprland/window#app-id": {
