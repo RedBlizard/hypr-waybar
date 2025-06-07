@@ -346,7 +346,7 @@
   },
   "custom/cycle_wall":{     
       "format": "<span font='9'></span> Swww",
-      "on-click": "~/.config/hypr/scripts/changeWallpaper",
+      "on-click": "~/.config/hypr/scripts/wallpaper-selector.sh",
       "on-click-right": "waypaper",
       //"on-click-right": "azote",
       "tooltip": false
