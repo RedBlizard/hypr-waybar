@@ -55,7 +55,7 @@ if [[ $(pidof swaybg) ]]; then
   pkill swaybg
 fi
 
-swww query || swww-daemon
+pgrep -x swww-daemon >/dev/null || (swww-daemon & disown)
 
 # change wallpaper using swww
 swww img "${DIR}/${RANDOMPICS}" --transition-step 20 --transition-fps=20
