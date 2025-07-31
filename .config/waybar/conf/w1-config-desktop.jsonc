@@ -188,7 +188,7 @@
   },
   "custom/notification": {
         "tooltip": false,
-        "format": "{icon}",
+        "format": "{}  {icon}",
         "format-icons": {
 	    "notification": "<span foreground='#e78284'><sup></sup></span>",
 	    "none": "",
