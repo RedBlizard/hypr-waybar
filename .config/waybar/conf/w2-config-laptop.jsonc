@@ -430,9 +430,9 @@
  
   },
   "custom/cycle_wall":{     
-      "format": "<span font='9'></span> Swww",
+      "format": "<span font='9'></span> Awww",
       "on-click": "~/.config/hypr/scripts/changeWallpaper.sh",
-      "on-click-right": "waypaper",
+      "on-click-right": "waytrogen",
       //"on-click-right": "azote",
       "tooltip": false
       

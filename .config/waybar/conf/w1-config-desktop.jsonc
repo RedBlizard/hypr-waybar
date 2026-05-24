@@ -10,7 +10,7 @@
     "reload_style_on_change": true,       
     
   //--- Modules ------------------------------
-       "modules-left": ["custom/launcher", "hyprland/workspaces", "custom/themeswitcher", "custom/info", "custom/hypr-welcome", "custom/swww", "custom/clipboard", "custom/notification", "cpu", "custom/cputemp", "custom/memory", "custom/hypridle", "custom/updates",],       
+       "modules-left": ["custom/launcher", "hyprland/workspaces", "custom/themeswitcher", "custom/info", "custom/hypr-welcome", "custom/awww", "custom/clipboard", "custom/notification", "cpu", "custom/cputemp", "custom/memory", "custom/hypridle", "custom/updates",],       
        "modules-center": ["hyprland/window",],
        "modules-right": ["tray", "network", "custom/traffic", "custom/language", "custom/cycle_wall", "pulseaudio", "pulseaudio#microphone", "clock", "custom/power",],
        
@@ -351,9 +351,9 @@
         
   },
   "custom/cycle_wall":{     
-      "format": "<span font='9'></span> Swww",
+      "format": "<span font='9'></span> Awww",
       "on-click": "~/.config/hypr/scripts/changeWallpaper.sh",
-      "on-click-right": "waypaper",
+      "on-click-right": "waytrogen",
       //"on-click-right": "azote",
       "tooltip": false
       
