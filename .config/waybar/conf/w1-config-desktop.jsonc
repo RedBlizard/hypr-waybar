@@ -26,6 +26,8 @@
             "(.*) - Brave": "$1",
             "(.*) - Chromium": "$1",
             "(.*) - Brave Search": "$1",
+            "(.*) - hypr-welcome": "$1",
+            "(.*) - select-wallpaper": "$1",
             "(.*) - SearXNG": "$1",
             "(.*) - Outlook": "$1",
             "(.*) - youtube.com": "$1",
@@ -352,9 +354,9 @@
   },
   "custom/cycle_wall":{     
       "format": "<span font=''></span> Awww",
-      "on-click": "~/.config/hypr/scripts/changeWallpaper.sh",
-      "on-click-right": "waytrogen",
-      //"on-click-right": "azote",
+      "on-click": "~/.config/hypr/scripts/selectWallpaper.sh -s",
+      "on-click-right": "~/.config/hypr/scripts/changeWallpaper.sh",
+      //"on-click-right": "waytrogen",
       "tooltip": false
       
   },    
