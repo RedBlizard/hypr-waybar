@@ -26,6 +26,7 @@
             "(.*) - Chromium": "$1",
             "(.*) - Brave Search": "$1",
             "(.*) - hypr-welcome": "$1",
+            "(.*) - select-wallpaper": "$1",
             "(.*) - SearXNG": "$1",
             "(.*) - Outlook": "$1",
             "(.*) - youtube.com": "$1",
