@@ -183,8 +183,8 @@
         "format": "<span font=''></span>",
         "interval": "once",
         "return-type": "json",       
-        "on-click": "cliphist list | wofi -dmenu | cliphist decode | wl-copy; pkill -RTMIN+9 waybar",
-        "on-click-right": "~/.config/hypr/scripts/cliphist-menu.sh; pkill -RTMIN+9 waybar", // ("Copy" "Delete" "Clear") */
+        "on-click": "~/.config/hypr/scripts/cliphist-history.sh; pkill -RTMIN+9 waybar",
+        "on-click-right": "~/.config/hypr/scripts/cliphist.sh; pkill -RTMIN+9 waybar", // ("Copy" "Delete" "Clear") */
         "signal": 8  
   
   },
